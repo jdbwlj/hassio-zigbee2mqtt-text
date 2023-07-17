@@ -43,12 +43,7 @@
       "log": false
     },
     "mqtt": {},
-          "server": "mqtt://localhost:1883",
-          "user": "mqtt",
-          "password": "mqtt"，
-    "serial": {}，
-          "adapter": "ezsp",
-          "port": "tcp://localhost:8888"
+    "serial": {}
   },
   "schema": {
     "zigbee_herdsman_debug": "bool?",
