@@ -27,23 +27,28 @@
   ],
   "ports": {
     "8487/tcp": 8487,
-    "8099/tcp": null
+    "8100/tcp": null
   },
   "ports_description": {
     "8487/tcp": "Socat tcp-listen port",
-    "8099/tcp": "Frontend tcp-listen port"
+    "8100/tcp": "Frontend tcp-listen port"
   },
   "options": {
-    "data_path": "/config/zigbee2mqtt",
+    "data_path": "/config/zigbee2mqtt-3",
     "socat": {
       "enabled": false,
       "master": "pty,raw,echo=0,link=/tmp/ttyZ2M,mode=777",
-      "slave": "tcp-listen:8485,keepalive,nodelay,reuseaddr,keepidle=1,keepintvl=1,keepcnt=5",
+      "slave": "tcp-listen:8487,keepalive,nodelay,reuseaddr,keepidle=1,keepintvl=1,keepcnt=5",
       "options": "-d -d",
       "log": false
     },
     "mqtt": {},
-    "serial": {}
+          "server": "mqtt://localhost:1883",
+          "user": "mqtt",
+          "password": "mqtt"
+    "serial": {}，
+          "adapter": "ezsp",
+          "port": "tcp://localhost:8888"
   },
   "schema": {
     "zigbee_herdsman_debug": "bool?",
