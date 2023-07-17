@@ -46,7 +46,7 @@
           "server": "mqtt://localhost:1883",
           "user": "mqtt",
           "password": "mqtt"
-    "serial": {}，
+    "serial": {}
           "adapter": "ezsp",
           "port": "tcp://localhost:8888"
   },
