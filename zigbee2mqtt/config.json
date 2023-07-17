@@ -1,5 +1,5 @@
 {
-  "name": "Zigbee2MQTT",
+  "name": "Zigbee2MQTT-3",
   "version": "1.32.1-1",
   "slug": "zigbee2mqtt-3",
   "description": "Use your ZigBee devices without the vendor's bridge or gateway",
@@ -43,7 +43,12 @@
       "log": false
     },
     "mqtt": {},
-    "serial": {}
+          "server": "mqtt://localhost:1883",
+          "user": "mqtt",
+          "password": "mqtt",
+    "serial": {},
+          "adapter": "ezsp",
+          "port": "tcp://localhost:8888"
   },
   "schema": {
     "zigbee_herdsman_debug": "bool?",
